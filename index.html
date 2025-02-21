@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visharad Badero - Portfolio</title>
+    <title>Visharad Baderao - Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS (Animate On Scroll) CSS -->
@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Visharad Badero</a>
+            <a class="navbar-brand fw-bold" href="#">Visharad Baderao</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +28,8 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#techstack">TechStack</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -44,18 +45,22 @@
     
             <!-- Social Media Icons -->
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/visharad-baderao-2810aa254/" target="_blank">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/Visharad-Coder" target="_blank">
+                <a href="https://github.com/yourgithub" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
     
-            <!-- Get in Touch Button -->
-            <a href="#contact" class="get-in-touch">Get in Touch</a>
+            <!-- Buttons: Get in Touch & Download Resume -->
+            <div class="button-container">
+                <a href="#contact" class="get-in-touch">Get in Touch</a>
+                <a href="assets/Resume_new.pdf" class="download-resume" download>Download Resume</a>
+            </div>
         </div>
     </section>
+    
     
     
 
@@ -197,6 +202,31 @@
     </div>
 </section>
 
+<section id="achievements">
+    <div class="container text-center">
+        <h2>My Achievements</h2>
+
+        <div class="achievement-card">
+            <h3>🏆 VSM Hackathon Runner-Up</h3>
+            <p>Secured Runner-Up position in VSM Hackathon Developed Mobile comparison website.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3>💻 Competitive Programming</h3>
+            <p>Solved 200+ coding problems across various competitive programming platforms.</p>
+        </div>
+
+        <div class="achievement-card">
+            <h3>📄 Research Paper Publication</h3>
+            <p>Published a research paper In <b>IEEE Conference</b> on Disaster Prediction using Appropriate ML techniques.</p>
+            <a href="assets/Final.pdf" target="_blank" class="view-paper">View Paper</a>
+        </div>
+
+        
+    </div>
+</section>
+
+
 <section id="education">
     <div class="container">
         <h2>Education</h2>
@@ -249,10 +279,11 @@
         <h2>Contact Me</h2>
         <p>Have a question or want to work together? Fill out the form below!</p>
         
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="048c2ee8-8748-433b-9807-805f7ec050d8">
+            <input type="text" placeholder="Your Name"name="name" required>
+            <input type="email" placeholder="Your Email" name="email" required>
+            <textarea placeholder="Your Message" rows="5"name="message" required></textarea>
             <button type="submit" class="btn-send">Send Message</button>
         </form>
     </div>
